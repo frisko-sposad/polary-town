@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Полари</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="leaflet.css" />
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      html,
+      body,
+      #map {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+      ym(69530491, 'init', {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div><img src="https://mc.yandex.ru/watch/69530491" style="position: absolute; left: -9999px" alt="" /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+  </head>
+  <body>
+    <form>
+      <label for="latitude">Latitude:</label>
+      <input id="latitude" type="text" />
+      <label for="longitude">Longitude:</label>
+      <input id="longitude" type="text" />
+      :: or, enter your own lat-long values and
+      <input
+        type="button"
+        value="Jump there"
+        onClick="updateLatLng(document.getElementById('latitude').value,document.getElementById('longitude').value,1)"
+      />
+      :: <a href="#" onclick="map.zoomOut(3, {animate:true})">zoom out</a> :: ::
+      <a href="#" onclick="map.zoomIn(3, {animate:true})">zoom in</a>
+    </form>
+    <h1>Полари</h1>
+    <div id="map" style="background-color: White" />
+    <script src="leaflet.js"></script>
+    <script src="BaseLabel.js"></script>
+    <script src="map.js"></script>
+  </body>
+</html>

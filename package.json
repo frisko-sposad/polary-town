@@ -1,0 +1,19 @@
+{
+  "name": "polary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BaseLabel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frisko-sposad/polary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frisko-sposad/polary/issues"
+  },
+  "homepage": "https://github.com/frisko-sposad/polary#readme"
+}
