@@ -1,9 +1,9 @@
 var image = 'map';
 var width = 3802;
-var height = 3864;
-var maxLevel = 4;
-var minLevel = 1;
-var orgLevel = 4;
+var height = 4413;
+var maxLevel = 5;
+var minLevel = 2;
+var orgLevel = 5;
 
 // Some weird calculations to fit the image to the initial position
 // Leaflet has some bugs there. The fitBounds method is not correct for large scale bounds
